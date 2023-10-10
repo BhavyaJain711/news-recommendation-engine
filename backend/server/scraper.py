@@ -28,7 +28,7 @@ def scrape_toi_headlines(element,category=''):
                 try:
                     headline_text = fig.find('figcaption').text
                     headline_link = fig.find('a')['href']
-                    headline_image = fig.find('img')['src']
+                    headline_image = fig.find('img')['data-src']
 
                     headlines.append({
                         'headline': headline_text,

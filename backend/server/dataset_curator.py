@@ -25,5 +25,5 @@ def scrape_and_save_headlines_to_csv(csv_filename):
         print('Error:', str(e))
 
 if __name__ == '__main__':
-    csv_filename = './backend/dataset/toi_headlines.csv'
+    csv_filename = '../dataset/toi_headlines.csv'
     scrape_and_save_headlines_to_csv(csv_filename)
